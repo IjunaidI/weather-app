@@ -8,18 +8,19 @@ body,html{
     width: 100%;
     height: 100vh;
     background-color: #1323251f;
+    overflow-y:scroll;
 }
 body{
     background-image: url(summer.jpg);
     background-size: cover;
-    height: 100vh;
+    background-position: center;
     background-repeat: no-repeat;
     color: white;
 }
 .weather{
         display: flex;
         flex-direction: column;
-        height: 600px;
+        height: 60vh;
       
         justify-content: center;
         align-items: center;
@@ -30,15 +31,15 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: auto;
+    height: 40vh;
     justify-content: space-around;
+    align-items: center;
 
 
 }
 .weekly-weather>*{
     
-    background-color: #97bdd8ba;
-    height: 200px;
+    height: 100%;
     flex: 1;
     flex-basis: 200px;
    
@@ -62,8 +63,9 @@ h1{
     align-items: center;
     flex-direction: column;
  
-    border-right:2px solid white;;
-    border-left: 2px solid white;;
+    border-right:2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
 }
 .weather-child>*{
     margin: 0;
