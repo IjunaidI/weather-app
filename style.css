@@ -1,8 +1,11 @@
 body,html{
-    height: 100%;
+    
     width: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100%;
 }
 .bg-color{
     width: 100%;
@@ -41,7 +44,8 @@ body{
     height: 100%;
     flex: 1;
     flex-basis: 200px;
-   
+    position: absolute;
+    bottom: 0;
 }
 .week-content>img{
     width: 50px;
