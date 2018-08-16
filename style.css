@@ -34,7 +34,8 @@ body{
     flex-wrap: wrap;
     width: 100%;
     height: 40%;
-   
+    position: absolute;
+    bottom: 0;
 
 
 }
@@ -43,8 +44,7 @@ body{
     height: 100%;
     flex: 1;
     flex-basis: 200px;
-    position: absolute;
-    bottom: 0;
+   
 }
 .week-content>img{
     width: 50px;
