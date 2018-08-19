@@ -71,18 +71,20 @@ h1{
     
  
 }
-.weather-child>*{
-    margin: 0;
+.weather-child>h3,p{
+    margin: 10px;
 
 }
 
 .week-day{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 40px;
     font-weight: bold;
     
 }
+
 .days{
     margin-bottom: 0px;
     margin-top: 0px;
