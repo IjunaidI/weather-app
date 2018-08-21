@@ -9,7 +9,7 @@ function getWheather(){
     document.querySelector(".none").style.display = "none";
 
 $.ajax({
-    url:`http://api.openweathermap.org/data/2.5/weather?q=${input}&appid=e57e7a5644160b5415f28669e1ce97bf&units=metric`,
+    url:`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=e57e7a5644160b5415f28669e1ce97bf&units=metric`,
     
     success: function(data){
         var d = new Date(data.dt*1000); 
@@ -56,7 +56,7 @@ $.ajax({
 })
 $.ajax({
     
-    url:`http://api.openweathermap.org/data/2.5/forecast?q=${input}&appid=e57e7a5644160b5415f28669e1ce97bf&units=metric`,
+    url:`https://api.openweathermap.org/data/2.5/forecast?q=${input}&appid=e57e7a5644160b5415f28669e1ce97bf&units=metric`,
     success: function(data){
         var d1 = new Date(data.list[0].dt*1000); 
         var d2 = new Date(data.list[8].dt*1000); 
