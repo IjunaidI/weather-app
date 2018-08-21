@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
  
-            <form class="form-wrapper cf">
-                    <input class="find" type="text" placeholder="Search here..." required>
-                    <button class="find-button" type="submit">Search</button>
-                </form>
+            <form class="form-wrapper cf" onsubmit="javascript:return false">
+                    <input class="find" id="search" type="text" placeholder="Search here..." >
+                    <button class="find-button" type="button" onclick="getWheather()">Search</button>
+            </form>
 <div class="container">
       
     <div class="weather">
           
             <h2 class="location">Karachi, Pakistan</h2>
-            <h1 ><img src="images/icons/icon-1.svg" alt="" width="90"><span class="tempr">31</span> </h1>
+            <h1 ><img class="weatherIcon" src="images/icons/icon-1.svg" alt="" width="90"> <span class="tempr"> 31 </span> C°</h1>
             <h3 class="day">Thursday</h3>
             <div class="add-icons">
                 <span><img src="images/icon-umberella.png" alt=""><span class="humidity">20</span>%</span>
@@ -32,55 +33,58 @@
     </div>
     <div class="weekly-weather black">
         <div class="weather-child">
-                <div class="week-day g-color"><p class="days">Friday 11</p></div>
+                <div class="week-day g-color"><p class="day1">Friday 11</p></div>
                 <div class="week-content">
                     
-            <h3>Fri 10</h3>
-            <img src="images/icons/icon-3.svg" alt="" >
-            <p class="temp">36 C°</p>
-            <p class="icon">Sunny Weather</p>
+            <h3 class="date1">Fri 10</h3>
+            <img class="weatherIcon1" src="images/icons/icon-3.svg" alt="" >
+            <p class="temp temp1">36 C°</p>
+            <p class="icon desc0">Sunny Weather</p>
      </div>
         </div>
         <div class="weather-child grey"> 
-                <div class="week-day b-color"><p class="days">Saturday 12</p></div>
+                <div class="week-day b-color"><p class="days day2">Saturday 12</p></div>
                 <div class="week-content">
-             <h3>Fri 10</h3>
-             <img src="images/icons/icon-5.svg" alt="" >
-            <p class="temp">35 C°</p>
-            <p class="icon">Mostly Cloudy</p>
+             <h3 class="date2">Fri 10</h3>
+             <img class="weatherIcon2" src="images/icons/icon-5.svg" alt="" >
+            <p class="temp temp2">35 C°</p>
+            <p class="icon desc1">Mostly Cloudy</p>
     </div>   </div>
         <div class="weather-child black">
-                <div class="week-day g-color"><p class="days">Sunday 13</p></div>
+                <div class="week-day g-color"><p class="days day3">Sunday 13</p></div>
                 <div class="week-content">
-                <h3>Fri 10</h3>
-                <img src="images/icons/icon-12.svg" alt="" >
-                <p class="temp">33 C°</p>
-                <p class="icon">Stormy Weather</p>
+                <h3 class="date3">Fri 10</h3>
+                <img class="weatherIcon3" src="images/icons/icon-12.svg" alt="" >
+                <p class="temp temp3">33 C°</p>
+                <p class="icon desc2">Stormy Weather</p>
      
 </div>
         </div>
         <div class="weather-child grey">
-                <div class="week-day b-color"><p class="days">Monday 14</p></div>
+                <div class="week-day b-color"><p class="days day4">Monday 14</p></div>
                 <div class="week-content">
-                <h3>Fri 10</h3>
-                <img src="images/icons/icon-7.svg" alt="" >
-                <p class="temp">28 C°</p>
-                <p class="icon">Humid Weather</p>
+                <h3 class="date4">Fri 10</h3>
+                <img class="weatherIcon4" src="images/icons/icon-7.svg" alt="" >
+                <p class="temp temp4">28 C°</p>
+                <p class="icon desc3">Humid Weather</p>
      
             </div>
         </div>
         <div class="weather-child black">
-                <div class="week-day g-color"><p class="days">Tuesday 15</p></div>
+                <div class="week-day g-color"><p class="days day5">Tuesday 15</p></div>
                 <div class="week-content">
-                <h3>Fri 10</h3>
-                <img src="images/icons/icon-13.svg" alt="" >
-                <p class="temp">32 C°</p>
-                <p class="icon">Snow storms</p>
+                <h3 class="date5">Fri 10</h3>
+                <img class="weatherIcon5" src="images/icons/icon-13.svg" alt="" >
+                <p class="temp temp5">32 C°</p>
+                <p class="icon desc4">Snow storms</p>
                 
             </div>
         </div>                                
     </div>
-</div>    
-
+</div>   
+<div class="none"> 
+<i class="fas fa-arrow-up arrow"></i>
+<h1 class="none-h" style="text-align: center">Type Your City name to get Weather Information</h1>
+</div>
 </body>
 </html>

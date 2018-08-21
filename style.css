@@ -7,6 +7,9 @@ body,html{
 body{
     height: 100%;
 }
+.container{
+    display: none;
+}
 .bg-color{
     width: 100%;
     height: 100%;
@@ -95,6 +98,20 @@ h1{
     font-size: 30px;
     font-weight: bold;
 }
+.arrow{
+    font-size: 80px;
+   
+}
+.none{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.none-h{
+    font-size: 90px;
+}
 .g-color{
     background-color: #3f4352;
 }
@@ -137,7 +154,7 @@ h1{
 }    
 /* Form wrapper styling */
 .form-wrapper {
-    width: 450px;
+    width: 400px;
     padding: 15px;
     margin: 150px auto 50px auto;
     background: #444;
@@ -153,7 +170,7 @@ h1{
     height: 20px;
     padding: 10px 5px;
     float: left;   
-    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    font: bold 15px 'Roboto', sans-serif;
     border: 0;
     background: #eee;
     border-radius: 3px 0 0 3px;     
@@ -239,4 +256,12 @@ h1{
     margin-right: auto;
     margin-left: auto;
     
+}
+@media only screen and (max-width: 430px) {
+    .form-wrapper {
+        width: 250px;
+    }
+    .form-wrapper input {
+        width: 230px;
+    }
 }
