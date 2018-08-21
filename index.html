@@ -15,8 +15,9 @@
 <body>
  
             <form class="form-wrapper cf" onsubmit="javascript:return false">
-                    <input class="find" id="search" type="text" placeholder="Search here..." >
-                    <button class="find-button" type="button" onclick="getWheather()">Search</button>
+                     <input class="find" id="search" type="text" placeholder="Search here..."onkeydown = "if (event.keyCode == 13)
+                    document.getElementById('btnSearch').click()" >
+                    <button class="find-button" id="btnSearch" type="button" onclick="getWheather()">Search</button>
             </form>
 <div class="container">
       
