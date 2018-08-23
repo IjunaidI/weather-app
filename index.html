@@ -14,17 +14,17 @@
 </head>
 <body>
  
-            <form class="form-wrapper cf" onsubmit="javascript:return false">
-                     <input class="find" id="search" type="text" placeholder="Search here..."onkeydown = "if (event.keyCode == 13)
+            <div class="form-wrapper cf">
+                    <input class="find" id="search" type="text" placeholder="Search here..."onkeydown = "if (event.keyCode == 13)
                     document.getElementById('btnSearch').click()" >
                     <button class="find-button" id="btnSearch" type="button" onclick="getWheather()">Search</button>
-            </form>
+            </div>
 <div class="container">
       
     <div class="weather">
           
             <h2 class="location">Karachi, Pakistan</h2>
-            <h1 ><img class="weatherIcon" src="images/icons/icon-1.svg" alt="" width="90"> <span class="tempr"> 31 </span> C°</h1>
+            <h1 ><img class="weatherIcon" src="images/icons/icon-1.svg" alt=""> <span class="tempr"> 31 </span> C°</h1>
             <h3 class="day">Thursday</h3>
             <div class="add-icons">
                 <span><img src="images/icon-umberella.png" alt=""><span class="humidity">20</span>%</span>
@@ -50,7 +50,8 @@
              <img class="weatherIcon2" src="images/icons/icon-5.svg" alt="" >
             <p class="temp temp2">35 C°</p>
             <p class="icon desc1">Mostly Cloudy</p>
-    </div>   </div>
+    </div>   
+</div>
         <div class="weather-child black">
                 <div class="week-day g-color"><p class="days day3">Sunday 13</p></div>
                 <div class="week-content">
