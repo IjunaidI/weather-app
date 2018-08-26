@@ -275,7 +275,10 @@
             width: 250px;
         }
         .form-wrapper input {
-            width: 220px;
+            width: 180px;
+        }
+        .form-wrapper button {
+            width: 80px;
         }
     }
     @media only screen and (max-height: 570px) {
